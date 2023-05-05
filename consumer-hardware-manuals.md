@@ -1,5 +1,5 @@
 ---
-description: This page shows a range of consumer hardware manuals that I have written.
+Description: This page shows a range of consumer hardware manuals that I have written.
 ---
 
 # Consumer hardware manuals
