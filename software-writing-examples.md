@@ -4,6 +4,13 @@
 
 ###
 
+## Advantech software
+
+This is an example of a piece of software used by Advantech customers.\
+**Software used:**\
+Adobe Framemaker\
+SnagIt
+
 **Import APAX-5000/6000 Variables**
 
 WebAccess supports the importing of Advantech APAX-5000 and 6000 series variables, including Tag names and Tag addresses, from the KW CSV file to the WebAccess database and automatically converts the KW variable address to a Modbus address for runtime exchange real-time data.
