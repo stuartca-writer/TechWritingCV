@@ -6,7 +6,9 @@
 
 ## Advantech software
 
-This is an example of a piece of software used by Advantech customers.\
+This is an example of a piece of software used by Advantech customers.
+
+\
 **Software used:**\
 Adobe Framemaker\
 SnagIt
