@@ -1,8 +1,8 @@
+---
+description: Below are examples of software documentation that I have written.
+---
+
 # Software Writing Examples
-
-
-
-###
 
 ## Advantech software
 
@@ -38,4 +38,6 @@ Select **Cross reference** from the pop-up dialog box and click OK
 Save **CSV file**： Keep the default file type-**CSV -** and specify the file name and path.
 
 ![Figure 19.4.2：KW page — Save CSV file](.gitbook/assets/3.jpeg)
+
+
 
