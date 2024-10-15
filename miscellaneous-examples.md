@@ -1,26 +1,10 @@
 ---
 description: >-
-  Below are an assorted selection of pieces of work that showcase a versatility
+  Below is an assorted selection of pieces of work that showcase a versatility
   in my abilities.
 ---
 
-# Miscellaneous examples
-
-## Cubing animation
-
-This animation was created to simply explain to clients how cubing (an algorithm which determines how products can fit into containers) works.&#x20;
-
-**Software used:**\
-Adobe Animate \
-Adobe Illustrator
-
-
-
-{% file src=".gitbook/assets/cubing-small.gif" %}
-Ocado cubing
-{% endfile %}
-
-
+# Miscellaneous Examples
 
 ## SVG Image map
 
