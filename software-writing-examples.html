@@ -1,0 +1,134 @@
+<html>
+	<head>
+		<link rel="shortcut icon" type="image/x-icon" href="profil-head.ico">
+		<link href="style.css" rel="stylesheet">
+		<title>Software writing examples</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	</head>
+<body>
+	<main>
+		<article id="mainLeft">
+			<section>
+				<a href="index.html"><h2>Home</h2></a>
+			</section>
+			
+			<section>
+				<h2>Porfolio</h2>
+				<i class="fa fa-file-code" aria-hidden="true"></i><a href="api-example.html"> API Example</a><br/>
+				<i class="fa fa-keyboard" aria-hidden="true"></i><a href="software-writing-examples.html"> Software writing examples</a><br/>
+				<i class="fa fa-image" aria-hidden="true"></i><a href="animation-examples.html"> Animation examples</a><br/>
+				<i class="fa fa-question" aria-hidden="true"></i><a href="misc-examples.html"> Miscelaneous examples</a><br/>
+				<i class="fa fa-hdd" aria-hidden="true"></i><a href="consumer-hardware.html"> Hardware examples</a><br>
+				<i class="fa fa-file" aria-hidden="true"></i><a href="scripts.html"> Video scripts</a><br>
+				<i class="fa fa-pencil" aria-hidden="true"></i><a href="marketing-copy.html"> Marketing copy</a>
+			</section>
+		</article>
+		<article id="mainRight">				
+
+		<section>
+<h1>Software user manual example</h1>
+
+Below is an example of software documentation that I have written.
+
+<h2> Advantech software</h2>
+
+This is an example of a piece of software used by Advantech customers.
+
+<h3>Software used:</h3>
+Adobe Framemaker<br>
+SnagIt
+<hr>
+
+<h2>Import APAX-5000/6000 Variable</h2>
+
+WebAccess supports the importing of Advantech APAX-5000 and 6000 series variables, including Tag names and Tag addresses, from the KW CSV file to the WebAccess database. It automatically converts the KW variable address to a Modbus address for runtime exchange real-time data.<br><br>
+
+<img src="assets/0.png" alt="line">
+
+<b>Step 1:</b> KW CSV Configuration <br>
+
+When you make all the IO configurations and variable settings, execute the following instructions to export all the variables (Global Variables only):<br><br>
+
+<b>1.</b>Select <b>File</b> and <b>Export</b>: Export the I/O information to the CSV file from the command line. <br><br>
+
+<img src="assets/1.jpeg" alt="image1"><br><br>
+
+<b>2.</b>Select <b>Cross reference</b> from the pop-up dialog box and click <b>OK</b>.<br><br>
+
+<img src="assets/2.jpeg" alt="image2"><br><br>
+
+<b>3.</b>Save <b>CSV file</b>: Keep the default file type-<b>CSV -</b> and specify the file name and path. <br><br>
+
+<img src="assets/3.jpeg" alt="image3"><br><br>
+
+<img src="assets/0.png" alt="line"><br><br>
+
+
+<h2> Ocado SaaS</h2>
+
+Written in markdown and yml.
+
+<table>
+	<thead>
+	<tr>
+		<td>---<br>
+			layout: redirect-url <br>
+			redirect-url: user-guides/isf-picking-app/pick-bulky<br>
+			title: "Pick bulky items"<br>
+			summary: "Learn how to use the picking app to pick bulky items."<br>
+			minitoc: "yes"<br>
+			icon:<br>
+			lang: en-us<br>
+			toc: isf<br>
+			---<br><br>
+			
+			When a customer orders a product which is too large to go into a regular container it's classed as a **bulky item**. For the purposes of picking bulky items are treated as **containers** and are given their own barcode.<br><br>
+			
+			{: .note}<br>
+			> Bulky items are only suitable for **Customer Collection** and only work if in-store fulfillment is configured to use **SKUs**.<br>
+			><br>
+			> Bulky item SKUs must be marked as **Bulky** using OSP's SKU API.<br>
+
+			## Manage equipment<br><br>
+			
+			Before you can start picking bulky items you need to add a bulky items picking cart.<br><br>
+			
+			1. From the **Welcome** screen click &#9776;.<br><br>
+			
+			2. Click **Manage equipment**.<br><br>
+			
+			3. Click **New bulky items picking cart**.<br><br>
+			
+			4. Select an item from the list and click **NEXT**.<br><br>
+			
+			5. Scan the picking cart's barcode anc click **NEXT**.<br><br>
+			
+			6. Check the summary and click **CONFIRM**.<br><br>
+			
+			7. You can now either **ADD MORE** bulky item picking carts or click **DONE**.<br><br>
+			
+			## Pick bulky items<br><br>
+			
+			{: .note }<br>
+			> All temperature regimes are picked at the same time.<br><br>
+			
+			Before you start picking bulky items ensure that you have enough printed barcodes for the items you're picking. These can be printed from the [**Store operations dashboard**](../../store-pick/dashboard#pbl).<br><br>
+			
+			The picking process is as follows:<br><br>
+			
+			1. Scan the product's barcode.<br><br>
+			
+			2. Stick the picking barcode on to the product.<br><br>
+			
+			3. Scan the picking barcode.<br><br>
+			
+		</td>
+	</tr>
+	</thead>
+</table>
+
+
+</body>
+
+</html>
+

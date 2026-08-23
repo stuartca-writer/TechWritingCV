@@ -1,0 +1,171 @@
+<html>
+	<head>
+		<link rel="shortcut icon" type="image/x-icon" href="profil-head.ico">
+		<link href="style.css" rel="stylesheet">
+		<title>API example</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+	</head>
+</html>
+
+<body>
+	<main>
+		<article id="mainLeft">
+			<section>
+				<a href="index.html"><h2>Home</h2></a>
+			</section>
+			
+			<section>
+				<h2>Porfolio</h2>
+				<i class="fa fa-file-code" aria-hidden="true"></i><a href="api-example.html"> API Example</a><br/>
+                    <i class="fa fa-keyboard" aria-hidden="true"></i><a href="software-writing-examples.html"> Software writing examples</a><br/>
+					<i class="fa fa-image" aria-hidden="true"></i><a href="animation-examples.html"> Animation examples</a><br/>
+                    <i class="fa fa-question" aria-hidden="true"></i><a href="misc-examples.html"> Miscelaneous examples</a><br/>
+                    <i class="fa fa-hdd" aria-hidden="true"></i><a href="consumer-hardware.html"> Hardware examples</a><br>
+                    <i class="fa fa-file" aria-hidden="true"></i><a href="scripts.html"> Video scripts</a><br>
+					<i class="fa fa-pencil" aria-hidden="true"></i><a href="marketing-copy.html"> Marketing copy</a>
+			</section>
+		</article>
+		<article id="mainRight">				
+<section>
+<h1>API example</h1>
+
+<table>
+	<thead>
+	<tr>
+		<th>Version</th>
+		<td>1</td>
+	</tr>
+	</thead>
+	
+	<thead>
+		<tr>
+			<th>Base URL</th>
+			<td>https://api.\[...]  </td>
+		</tr>
+	</thead>
+
+
+	<thead>
+		<tr>
+			<th>Service account role </th>
+			<td>WS Store layout </td>
+		</tr>
+		</thead>
+
+		<thead>
+			<tr>
+				<th>Sandbox mocks</th>
+				<td>Yes</td>
+			</tr>
+		</thead>
+
+			<thead>
+				<tr>
+				<th>Swagger available</th>
+				<td>Download swagger</td>
+				</tr>
+			</thead>
+				
+			<thead>
+				<tr>
+					<th>Endpoint reference</th>
+					<td>SKU Placements resource</td>
+				</tr>
+			</thead>
+
+			<thead>
+				<tr>
+					<th>Status</th>
+					<td>Active</td>
+				</tr>
+			</thead>	
+</table>
+</section>
+
+<h2> SKU Placements resource </h2>
+
+Use the SKU placements resource to view, create, update, and delete the placement of products in one of your stores.
+
+The SKU placements resource is just one of the resources you need to use when managing a store-picking operation. See [Using APIs to configure In-Store Fulfillment](https://help.abundo.osp.tech/en-us/developer/api/reference/isf/using-isf-apis) to find out more about these resources, and how to use them.
+
+<h2> Understanding SKU placements</h2>
+
+To enable a product to be picked in one of your stores, the store-picking application displays the required SKU to the picker, along with its expected location. This helps to direct pickers to the correct location, and to ensure the most efficient pick walk around the store.
+
+This information - where the SKU is expected to be - is called a SKU placement. It is a mapping between a SKU and a [pick location](https://help.abundo.osp.tech/en-us/developer/api/reference/isf/pick-locations/).
+
+Updates that have passed their finalization time will not be reflected in the shipments. Example: If Shipment A has a finalization time of midnight and Shipment B has a finalization time of 15:00, if the user updates locations at 10am the changes will not occur for shipment A, but they will for shipment B.\\
+
+<h2>In-Store Fulfillment resource scenarios</h2>
+
+This page contains some sample API calls and responses that you can make with the In-Store Fulfillment resources, using the sandbox environment.
+
+See the full API reference for the Pick Locations resource
+See the full API reference for the SKU Placements resource
+
+<h2> Scenarios </h2>
+
+Get SKU placements
+
+GET /v1/sites/{retailerSiteId}/sku-placements
+
+<h2>Get SKU placements </h2>
+
+<b>Success</b>
+
+GET /v1/sites/65536661/sku-placements?retailerSkuId=75334667\&pickLocationId=59304427\&maxPageSize=5\&pageToken=7b5e1d74-aec7-4671-a175-5ba0ae38ed89
+
+<h2>Success</h2>
+
+<section>
+	<table>
+		<thead>
+		<tr>
+			<th>GET</th>
+			<td>/v1/sites/65536661/sku-placements?retailerSkuId=75334667\&pickLocationId=59304427\&maxPageSize=5\&pageToken=7b5e1d74-aec7-4671-a175-5ba0ae38ed89</td>
+		</tr>
+		</thead>
+	
+		<thead>
+		<tr>
+		<!--	<td>
+			</td>
+			<th>
+			</th>-->
+		</tr>
+	</thead>
+	
+	<thead>
+	<tr>
+		<th>
+		</th>
+	<td>
+Response                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+<p>Status code: 200</p>
+<code>
+	{<br>
+	"metadata": { <br>
+	"nextPageToken": "7b5e1d74-aec7-4671-a175-5ba0ae38ed89",<br>
+	"pageToken": "7b5e1d74-aec7-4671-a175-5ba0ae38ed89",<br>
+	"maxPageSize": 20<br>
+	<p>},</p>
+	"content": [<br>
+	{<br>
+	"pickLocationId": "59304427",<br>
+	"priority": 1,<br>
+	"retailerSkuId": "75334667",<br>
+	"skuPlacementId": "30593308"<br>
+	}<br>
+	]<br>
+	}<br>                                                                                                                                             
+	</code>
+	</td>
+</tr>
+	</thead>
+</table>
+		
+			</section>
+		</main>
+	</body>
+</html>
